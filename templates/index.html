@@ -1,0 +1,60 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>CurrencyExchange</title>
+		<style>
+			.container{
+				background-image: url(/static/bg2.png);
+				width:100%;
+			}
+			h1{
+				text-align:center;
+				padding-top:15%;
+			}
+			#cfrom{
+				width:12%;
+				margin:0 auto;
+				padding-left:38%;
+				float:left;
+			}
+			#cto{
+				width:50%;
+				float:left;
+			}
+			#subbutton{
+				width:55%;
+				padding-left:45%;
+				padding-top:8%;
+				padding-bottom:15%;
+			}
+			.navbar-footer{
+				text-align:center;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Wanna know about Currency Conversion Rates??</h1>
+			<form action="/exchange">
+				<div id='cfrom'>
+					<label id="from" for="changefrom">Change From:</label><br>
+					<input type="radio" name="cfrom" value="EUR">EURO<br>
+					<input type="radio" name="cfrom" value="USD">US DOLLAR<br>
+					<input type="radio" name="cfrom" value="INR">RUPPEE<br>
+				</div><!--cfrom div closed-->
+				<div id='cto'>
+					<label id="to" for="changeto">Change To:</label><br>
+					<input type="radio" name="cto" value="EUR">EURO<br>
+					<input type="radio" name="cto" value="USD">US DOLLAR<br>
+					<input type="radio" name="cto" value="INR">RUPPEE<br>
+				</div><!--cto div closed-->
+				<div id="subbutton">
+					<input type="submit" value="Submit">
+				</div><!--subbutton div closed-->
+			</form>
+		</div><!--container class closed-->
+		<div class="navbar-footer">Created by Kunal Kumbhar</div>
+	</body>
+
+</html>
